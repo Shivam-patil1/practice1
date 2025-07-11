@@ -470,3 +470,24 @@ body.dark {
 .skill-card {
   animation: bounce 1.2s infinite;
 }
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.2rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 900px;
+}
+
+@media (max-width: 700px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.7rem;
+    padding: 0 0.5rem;
+  }
+  .skill-card {
+    font-size: 0.95rem;
+    padding: 0.7rem 0.5rem;
+  }
+}
