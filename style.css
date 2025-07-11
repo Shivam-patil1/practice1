@@ -52,6 +52,9 @@ body.dark {
 }
 
 .hero-title {
+    .hero-title {
+  animation: fadeIn 1.2s ease-in;
+}
   font-size: 6rem;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -215,7 +218,7 @@ body.dark {
 }
 
 .about-section {
-  background: #fff;
+  background: white;
   border-radius: 1rem;
   box-shadow: 0 2px 8px #0001;
   padding: 3rem 2rem;
@@ -232,7 +235,7 @@ body.dark {
 
 .about-text {
   font-size: 1.25rem;
-  color: #333;
+  color: #1695a6;
   line-height: 1.7;
 }
 
@@ -312,7 +315,7 @@ body.dark {
   }
   100% {
     box-shadow:
-      0 0 40px 12px rgba(255, 0, 0, 0.7),
+      0 0 40px 12px rgba(130, 132, 233, 0.427),
       0 0 80px 16px rgba(255, 0, 0, 0.4);
   }
 }
@@ -381,4 +384,89 @@ body.dark {
     font-size: 1rem;
     padding: 0.7rem 1.2rem;
   }
+}
+
+.project-section {
+  background: #f8fafc;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px #0001;
+  padding: 3rem 2rem;
+  margin: 2rem auto;
+  max-width: 1100px;
+}
+
+.project-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #3b82f6;
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 16px rgba(60, 60, 60, 0.10), 0 1.5px 4px rgba(60, 60, 60, 0.08);
+  padding: 2rem 1.2rem 1.2rem 1.2rem;
+  transition: transform 0.18s, box-shadow 0.18s;
+  text-align: left;
+  border: 1.5px solid #e5e7eb;
+  position: relative;
+}
+
+.project-card:hover,
+.project-card:focus {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(60, 60, 60, 0.18), 0 3px 12px rgba(60, 60, 60, 0.12);
+  z-index: 2;
+  outline: none;
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  color: #a21caf;
+}
+
+.project-card p {
+  font-size: 1.05rem;
+  color: #333;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .project-section {
+    padding: 1.5rem 0.75rem;
+    margin: 1rem 0.5rem;
+  }
+  .project-title {
+    font-size: 1.5rem;
+  }
+  .project-card {
+    padding: 1.2rem 0.7rem 0.7rem 0.7rem;
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0);}
+  50% { transform: translateY(-12px);}
+  100% { transform: translateY(0);}
+}
+.skill-card {
+  animation: float 2.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(-18px);}
+}
+.skill-card {
+  animation: bounce 1.2s infinite;
 }

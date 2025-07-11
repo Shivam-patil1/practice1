@@ -15,6 +15,7 @@
         extend: {
           fontFamily: {
             sans: ['Roboto', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            icon: ['Material Icons'],
           },
         },
       },
@@ -30,6 +31,7 @@
       z-index: 0;
     }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white font-sans">
 
@@ -44,7 +46,7 @@
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
-      <button class="toggle-btn" id="toggleBtn" aria-label="Toggle Dark Mode">🌙</button>
+      <button class="toggle-btn" id="toggleBtn" aria-label="Toggle bg-white Mode">🌙</button>
     </div>
   </header>
 
@@ -78,14 +80,14 @@
     <div class="max-w-5xl mx-auto">
       <h2 class="text-3xl font-bold text-center mb-10">My Skills</h2>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-        <div class="bg-white dark:bg-gray-700 p-4 rounded shadow">AWS</div>
-        <div class="bg-white dark:bg-gray-700 p-4 rounded shadow">Docker</div>
-        <div class="bg-white dark:bg-gray-700 p-4 rounded shadow">Kubernetes</div>
-        <div class="bg-white dark:bg-gray-700 p-4 rounded shadow">Terraform</div>
-        <div class="bg-white dark:bg-gray-700 p-4 rounded shadow">Jenkins</div>
-        <div class="bg-white dark:bg-gray-700 p-4 rounded shadow">GitHub Actions</div>
-        <div class="bg-white dark:bg-gray-700 p-4 rounded shadow">Linux</div>
-        <div class="bg-white dark:bg-gray-700 p-4 rounded shadow">CI/CD</div>
+        <div class="skill-card"><i class="fab fa-aws"></i><div class="skill-label">AWS</div></div>
+        <div class="skill-card"><i class="fab fa-docker"></i><div class="skill-label">Docker</div></div>
+        <div class="skill-card"><i class="fab fa-kubernetes"></i><div class="skill-label">Kubernetes</div></div>
+        <div class="skill-card"><i class="fas fa-cubes"></i><div class="skill-label">Terraform</div></div>
+        <div class="skill-card"><i class="fab fa-jenkins"></i><div class="skill-label">Jenkins</div></div>
+        <div class="skill-card"><i class="fab fa-github"></i><div class="skill-label">GitHub Actions</div></div>
+        <div class="skill-card"><i class="fab fa-linux"></i><div class="skill-label">Linux</div></div>
+        <div class="skill-card"><i class="fas fa-sync-alt"></i><div class="skill-label">CI/CD</div></div>
       </div>
     </div>
   </section>
@@ -129,15 +131,8 @@
       </div>
       <button type="submit" class="contact-submit">Send Message</button>
     </form>
-    <div class="contact-info">
-      Or email me at: <a href="mailto:shivam@example.com" class="contact-link">shivam@example.com</a>
-    </div>
-    <div class="contact-info">
-      GitHub: <a href="https://github.com/Shivam-patil1" class="contact-link" target="_blank">Shivam-patil1</a>
-    </div>
-    <div class="contact-info">
-      LinkedIn: <a href="https://linkedin.com/in/shivam-patil" class="contact-link" target="_blank">shivam-patil</a>
-    </div>
+    
+   
   </section>
 
   <script>
